@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:background="@android:color/transparent"
+        android:text="@string/capture"
+        android:textColor="@android:color/holo_blue_bright"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_below="@+id/editTextTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnCapture"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:text="@string/save"
+        android:textColor="@android:color/holo_blue_bright"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_photo_title"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <EditText
+        android:id="@+id/editTextTag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCapture"
+        android:layout_alignLeft="@+id/btnCapture"
+        android:layout_alignStart="@+id/btnCapture"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="360dp"
+        android:hint="@string/tag1"
+        app:layout_constraintBottom_toTopOf="@+id/btnCapture"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <EditText
+        android:id="@+id/editTextTag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextTag1"
+        android:layout_alignStart="@+id/editTextTag1"
+        android:layout_alignTop="@+id/editTextTag1"
+        android:layout_marginStart="88dp"
+        android:hint="@string/tag2"
+        app:layout_constraintStart_toEndOf="@+id/editTextTag1"
+        app:layout_constraintTop_toTopOf="@+id/editTextTag1" />
+
+    <EditText
+        android:id="@+id/editTextTag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCapture"
+        android:layout_alignLeft="@+id/btnCapture"
+        android:layout_alignStart="@+id/btnCapture"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/tag3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toEndOf="@+id/editTextTag2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTag2" />
+
+</android.support.constraint.ConstraintLayout>
