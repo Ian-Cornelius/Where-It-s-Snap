@@ -1,2 +1,2 @@
 # Where-It-s-Snap
-Repo for Where It's Snap Android App
+Android app for taking pictures, tagging them, and viewing them later based on these tags and titles.
